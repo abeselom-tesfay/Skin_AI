@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full top-0 left-0 z-50 bg-blue-900 px-4 md:px-20 py-10 flex justify-between items-center">
+  <nav class="fixed w-full top-0 left-0 z-50 bg-blue-900 px-4 md:px-20 py-3 flex justify-between items-center">
     <div class="">
       <img src="@/assets/logo.svg" alt="Logo" class="h-30 w-30"/>
     </div>
