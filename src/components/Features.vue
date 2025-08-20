@@ -411,9 +411,69 @@
         Due to the productive cooperation with doctors, the quality of the algorithm performance is constantly being improved. Based on growing experience and its own autonomous rules, the AI is able to distinguish between benign and malignant tumors, find risks of human papillomavirus, and classify different types of acne…
       </p>
     </div>
-
-
   </div>
+
+  <!-- community-->
+<!-- community-->
+<div class="px-4 md:px-20">
+  <h1 class="font-bold text-3xl text-gray-900 text-start">
+    You are joining more than 900,000 people that use AI Dermatologist to keep their skin healthy.
+  </h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+    <!-- Card 1 -->
+    <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
+      <h1 class="text-2xl font-bold">943,569</h1>
+      <p>AI Dermatologist users</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
+      <h1 class="text-2xl font-bold">2,935,707</h1>
+      <p>Online checks done</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
+      <h1 class="text-2xl font-bold">35,755</h1>
+      <p>Skin Diseases Detected</p>
+    </div>
+  </div>
+</div>
+
+<!--app-->
+<div class="px-4 md:px-20 mt-5">
+  <div class="relative py-5 md:grid grid-cols-2 bg-slate-50 md:bg-slate-100 rounded-2xl overflow-hidden max-w-6xl mx-auto">
+    <!-- Left content -->
+    <div class="z-10 px-6 md:px-10">
+      <h1 class="font-bold text-3xl text-gray-900 text-start mb-6">
+        Download App for your mobile now!
+      </h1>
+      <p class="text-gray-600 mb-4">
+        AI-Dermatologist is an innovative prediagnostic app helping you monitor your skin health and detect any unusual or alerting skin conditions so you could contact healthcare providers in time and avoid undesirable consequences.
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="flex items-center">
+          <img src="@/assets/images/google.png" alt="Google Play" class="w-32 h-auto" />
+        </a>
+        <a href="#" class="flex items-center">
+          <img src="@/assets/images/apple.png" alt="App Store" class="w-32 h-auto" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Right image -->
+    <div class="relative flex items-center justify-center max-md:hidden">
+      <img 
+        src="@/assets/images/phone-ai.png" 
+        alt="Phone" 
+        class="w-72 md:w-96 drop-shadow-xl"
+      />
+    </div>
+  </div>
+</div>
+
+
  </section>
 
 </template>
