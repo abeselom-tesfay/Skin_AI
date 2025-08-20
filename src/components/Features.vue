@@ -59,28 +59,28 @@
 
   <!-- Carousel -->
   <section class="py-10 px-4 md:px-20">
-        <div class="relative">
-                <div class="flex flex-col justify-start max-md:hidden">
-                  <img src="@/assets/images/test.png" alt="ISO Certification" class="w-70 h-auto" />
-                </div>
-          
-            <img
-              :src="images[currentIndex]"
-              :alt="`Carousel Image ${currentIndex + 1}`"
-              class="w-full h-auto object-cover rounded-lg"
-            />
+    <div class="relative">
+      <!-- Carousel Images -->
+<div v-for="(item, index) in carousel" :key="index">
+  <img
+    v-show="carouselIndex === index"
+    :src="item.image"
+    :alt="item.alt"
+    class="w-full h-auto object-cover rounded-lg"
+  />
+</div>
 
-            <!-- Dots -->
-            <div class="flex justify-center gap-2 mt-4">
-              <button
-                v-for="(img, index) in images"
-                :key="index"
-                class="w-3 h-3 rounded-full"
-                :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
-                @click="currentIndex = index"
-              ></button>
-            </div>
-      </div>
+<div class="flex justify-center gap-2 mt-4">
+  <button
+    v-for="(item, index) in carousel"
+    :key="index"
+    class="w-3 h-3 rounded-full"
+    :class="index === carouselIndex ? 'bg-blue-900' : 'bg-gray-300'"
+    @click="carouselIndex = index"
+  ></button>
+</div>
+
+    </div>
   </section>
 
   <!-- What do you know section -->
@@ -245,7 +245,7 @@
 
 <section class="px-4 md:px-20 py-10">
     <div class="max-w-5xl mx-auto">
-      <h3 class="text-2xl font-bold mb-6 text-gray-900 text-start">84% of our users find AI Dermatologist helpfull.</h3>
+      <h2 class="text-2xl font-bold mb-6 text-gray-900 text-start">84% of our users find AI Dermatologist helpfull.</h2>
 
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -303,6 +303,119 @@
     </div>
   </section>
 
+<!-- Key Features -->
+<section class="px-4 md:px-20 py-10">
+  <div>
+    <h3 class="text-gray-900 text-2xl font-bold text-center md:text-start mb-6">Why is AI Dermatologist worth using?</h3>
+    
+    <!-- Desktop Grid -->
+    <div class="hidden md:grid grid-cols-4 gap-4">
+      <div
+        v-for="feature in features"
+        :key="feature.title"
+        class="p-6"
+      >
+        <img :src="feature.icon" alt="Feature Icon" class="w-12 h-12 mb-4" />
+        <h4 class="text-lg font-semibold text-gray-900">{{ feature.title }}</h4>
+        <p class="text-gray-600 mt-2">{{ feature.description }}</p>
+      </div>
+    </div>
+
+ <!-- Mobile Carousel -->
+    <div class="md:hidden">
+      <div class="p-6">
+        <img :src="currentFeature.icon" alt="Feature Icon" class="w-12 h-12 mb-4" />
+        <h4 class="text-lg font-semibold text-gray-900">{{ currentFeature.title }}</h4>
+        <p class="text-gray-600 mt-2">{{ currentFeature.description }}</p>
+      </div>
+
+      <!-- Dots navigation -->
+      <div class="flex justify-center gap-2 mt-6">
+        <button
+          v-for="(feature, index) in features"
+          :key="index"
+          class="w-3 h-3 rounded-full"
+          :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
+          @click="currentIndex = index"
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How to use -->
+ <section class="px-4 md:px-20 py-10">
+  <div class="md:text-start text-center mb-8">
+    <h1 class="text-gray-900 font-bold mb-6 text-2xl">How to use AI Dermatologist?</h1>
+  </div>
+
+  <!-- Desktop Grid -->
+  <div class="hidden md:grid grid-cols-3 gap-6">
+    <div
+      v-for="(step, index) in steps"
+      :key="index"
+      class="bg-white p-6 flex flex-col items-start"
+    >
+      <img :src="step.image" alt="Step Image" class="w-full h-auto mb-4 rounded-md" />
+      <h4 class="text-lg font-semibold text-gray-900">{{ step.title }}</h4>
+      <p class="text-gray-600 mt-2">{{ step.description }}</p>
+    </div>
+  </div>
+
+  <!--Moblile-->
+  <div class="md:hidden">
+    <div class="items-center ">
+      <img :src="currentStep.image" alt="Step Image" class="w-full h-auto mb-4 rounded-md" />
+      <h4 class="text-lg font-semibold text-gray-900">{{ currentStep.title }}</h4>
+      <p class="text-gray-600 mt-2">{{ currentStep.description }}</p>
+    </div>
+
+    <div class="flex justify-center gap-2 mt-6">
+      <button
+        v-for="(step, index) in steps"
+        :key="index"
+        class="w-3 h-3 rounded-full"
+        :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
+        @click="currentIndex = index"
+      ></button>
+    </div>
+
+  </div>
+  <div class="flex justify-center py-10">
+    <button class="bg-red-600 text-2xl text-white rounded-full px-16 py-3">
+      Try Now!
+    </button>
+
+  </div>
+  <div class="flex flex-col py-5">
+    <p class="text-gray-600 text-sm">* You can take a photo on your mobile phone or upload a photo from your computer.</p>
+    <p class="text-gray-600 text-sm">** You can view your results online or send them to your email address.</p>
+  </div>
+ </section>
+
+ <!--AI Section-->
+ <section class="px-4 md:px-20 py-10 ">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="flex justify-center order-2 md:order-1">
+      <img src="@/assets/images/ai-image.png" alt="AI Dermatologist" class="w-full max-w-sm h-auto object-contain" />
+    </div>    
+    <div class="flex flex-col items-start order-1 md:order-2">
+      <h1 class="text-gray-800 text-3xl font-bold mb-4">How does Artificial Intelligence analyze images?</h1>
+      <p class="text-gray-600 mb-4">
+        AI Dermatologist uses a deep machine learning algorithm (AI-algorithm). The human ability to learn from examples and experiences has been transferred to a computer. For this purpose, the neural network has been trained using a dermoscopic imaging database containing tens of thousands of examples that have confirmed diagnosis and assessment by dermatologists.
+      </p>
+        <p class="text-gray-600 mb-4">
+          The AI is able to distinguish between benign and malignant tumors, similar to the ABCDE rule (5 main signs of oncology: asymmetry, boundary, color, diameter, and change over time). The difference between them is that the algorithm can analyze thousands of features, but not only 5 of them. Of course, only a machine can detect that amount of evidence.
+      </p>
+      <p class="text-gray-600 mb-4">
+        Due to the productive cooperation with doctors, the quality of the algorithm performance is constantly being improved. Based on growing experience and its own autonomous rules, the AI is able to distinguish between benign and malignant tumors, find risks of human papillomavirus, and classify different types of acne…
+      </p>
+    </div>
+
+
+  </div>
+ </section>
+
 </template>
 
 
@@ -310,9 +423,15 @@
 
 import { ref, computed } from "vue";
 
-const images = [
-  new URL('@/assets/images/banner1.png', import.meta.url).href,
-  new URL('@/assets/images/banner2.png', import.meta.url).href
+const carousel = [
+  {
+    image: new URL('@/assets/images/banner1.png', import.meta.url).href,
+    alt: 'Banner 1'
+  },
+  {
+    image: new URL('@/assets/images/banner2.png', import.meta.url).href,
+    alt: 'Banner 2'
+  }
 ];
 
 const testimonials = [
@@ -346,6 +465,47 @@ const testimonials = [
   },
 ];
 
+const features = [
+  {
+    title: "Smart",
+    description: "AI Dermatologist is created on the basis of artificial intelligence as a result of joint work of IT specialists and doctors. Our app has the same accuracy as a professional dermatologist",
+    icon: new URL("@/assets/images/smart.png", import.meta.url).href,
+  },
+  {
+    title: "Simple",
+    description: "Place your phone near a mole or other formation on the skin and within 1 minute you will find out if there is cause for concern.",
+    icon: new URL("@/assets/images/simple.png", import.meta.url).href,
+  },
+  {
+    title: "Accessible",
+    description: "AI Dermatologist is available anytime, anywhere. Keep your health in check at your fingertips even when you are on the go.",
+    icon: new URL("@/assets/images/accessible.png", import.meta.url).href,
+  },
+  {
+    title: "Affordable",
+    description: "AI Dermatologist’s leading image analytics features come at an unbeatable price, fit for any request or budget. Flexible pricing plans and customizable bundles will save your practice both time and money.",
+    icon: new URL("@/assets/images/affordable.png", import.meta.url).href,
+  },
+];
+
+const steps = [
+  {
+    title: "Take a photo*",
+    description: "Keep zoomed at the closest distance (less than 10 cm), keep in focus and center only the skin mark (without hair, wrinkles and other objects)",
+    image: new URL("@/assets/images/step1.png", import.meta.url).href
+  },
+  {
+    title: "Identify and send",
+    description: "Send your photo to the Artificial Intelligence. The system will analyze it and send you a risk assessment.",
+    image: new URL("@/assets/images/step2.png", import.meta.url).href
+  },
+  {
+    title: "Receive your risk assessment **",
+    description: "Get the result within 60 seconds and related advice on the next steps to take.",
+    image: new URL("@/assets/images/step3.png", import.meta.url).href
+  }
+]
+
 // Compute slides with 2 testimonials per slide
 const slides = computed(() => {
   const chunked = [];
@@ -354,7 +514,9 @@ const slides = computed(() => {
   }
   return chunked;
 });
-
+const currentFeature = computed(() => features[currentIndex.value]);
+const currentStep = computed(() => steps[currentIndex.value]);
 
 const currentIndex = ref(0);
+const carouselIndex = ref(0);
 </script>
