@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 md:px-20">
+  <section class="px-4 md:px-40">
     <div class="items-start">
       <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-10">
         Why should you use AI Dermatologist?
@@ -226,33 +226,135 @@
     <!-- bg image-->
     <section class="px-4 md:px-20 justify-center">
       <div
-        class="px-4 md:px-20 rounded-md h-60 flex items-center justify-center text-gray-900 bg-[url('@/assets/images/bg-image-banner.png')] bg-cover bg-center"
+        class="px-4 md:px-20 rounded-lg h-60 flex items-center justify-center text-gray-900 bg-[url('@/assets/images/bg-image-banner.png')] bg-cover bg-center"
       >
         <div class="w-full max-w-7xl">
           <h2 class="text-3xl font-bold mb-4">Early Detection Saves Lives!</h2>
           <p class="mb-6">
             Small changes can mean big problems. 7 simple questions can reveal what your skin needs to stay healthy.
           </p>
-          <button class="px-14 text-white py-3 bg-red-600 rounded-full shadow-md hover:bg-blue-700">
+          <button class="px-14 text-white py-3 bg-red-600 rounded-full shadow-md">
             ACT NOW
           </button>
         </div>
       </div>
+
     </section>
 
+    <!-- Testimonials -->
 
+<section class="px-4 md:px-20 py-10">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6 text-gray-900 text-start">84% of our users find AI Dermatologist helpfull.</h3>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          v-for="testimonial in slides[currentIndex]"
+          :key="testimonial.name"
+          class="bg-white p-6 rounded-2xl border border-spacing-1 shadow flex flex-col items-center"
+        >
+          <img
+            :src="testimonial.image"
+            alt="user"
+            class="w-16 h-16 rounded-full border-2 border-blue-900"
+          />
+          <h3 class="mt-4 font-semibold">{{ testimonial.name }}</h3>
+          <p class="text-sm text-gray-500">{{ testimonial.role }}</p>
+
+          <!-- Stars -->
+      <div class="flex justify-center mt-2">
+        <template v-for="n in 5">
+          <svg
+            v-if="n <= testimonials[currentIndex].rating"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 text-yellow-400"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            :key="'filled-' + n"
+          >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.38 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+          </svg>
+          <svg
+            v-else
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 text-gray-300"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            :key="'empty-' + n"
+          >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.38 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+          </svg>
+        </template>
+      </div>  
+      <p class="mt-3 text-gray-700 italic text-center">"{{ testimonial.text }}"</p>
+      </div>
+      </div>
+      <!-- Dots navigation -->
+      <div class="flex justify-center gap-2 mt-6">
+        <button
+          v-for="(slide, index) in slides"
+          :key="index"
+          class="w-3 h-3 rounded-full"
+          :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
+          @click="currentIndex = index"
+        ></button>
+      </div>
+    </div>
+  </section>
 
 </template>
 
 
 <script setup>
 
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const images = [
   new URL('@/assets/images/banner1.png', import.meta.url).href,
   new URL('@/assets/images/banner2.png', import.meta.url).href
 ];
+
+const testimonials = [
+  {
+    name: "John Doe",
+    role: "Software Engineer",
+    text: "This platform transformed the way I work. The UI is sleek and the experience is seamless.",
+    image: "https://i.pravatar.cc/100?img=1",
+    rating: 5,
+  },
+  {
+    name: "Sarah Lee",
+    role: "Product Designer",
+    text: "The design and functionality exceeded my expectations. I highly recommend it to professionals.",
+    image: "https://i.pravatar.cc/100?img=2",
+    rating: 4,
+  },
+  {
+    name: "Michael Brown",
+    role: "Data Scientist",
+    text: "A truly innovative solution that makes my workflow faster and more enjoyable.",
+    image: "https://i.pravatar.cc/100?img=3",
+    rating: 5,
+  },
+  {
+    name: "Emily Carter",
+    role: "Project Manager",
+    text: "Great support and intuitive features. It has become an essential tool in our team.",
+    image: "https://i.pravatar.cc/100?img=4",
+    rating: 4,
+  },
+];
+
+// Compute slides with 2 testimonials per slide
+const slides = computed(() => {
+  const chunked = [];
+  for (let i = 0; i < testimonials.length; i += 2) {
+    chunked.push(testimonials.slice(i, i + 2));
+  }
+  return chunked;
+});
+
 
 const currentIndex = ref(0);
 </script>
