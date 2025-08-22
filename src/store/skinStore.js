@@ -6,13 +6,15 @@ export const useSkinStore = defineStore('skin', {
     image: null,
     prediction: null,
     loading: false,
-    error: null
+    error: null,
+    heatmap: null
   }),
   actions: {
     setImage(file) {
       this.image = file
       this.prediction = null
       this.error = null
+      this.heatmap = null
     },
     async predict() {
       if (!this.image) return
@@ -24,12 +26,15 @@ export const useSkinStore = defineStore('skin', {
         formData.append('file', this.image)
 
         const response = await axios.post('http://localhost:5000/predict', formData, {
-          headers: {
-            'Content-Type': 'multipart/form-data'
-          }
+          headers: { 'Content-Type': 'multipart/form-data' }
         })
 
-        this.prediction = response.data
+        this.prediction = {
+          label: response.data.class,
+          confidence: (response.data.probability * 100).toFixed(2) + '%',
+          probabilities: response.data.probabilities,
+        }
+        this.heatmap = response.data.heatmap
       } catch (err) {
         this.error = 'Prediction failed. Please try again.'
         console.error(err)
@@ -40,6 +45,7 @@ export const useSkinStore = defineStore('skin', {
     clear() {
       this.image = null
       this.prediction = null
+      this.heatmap = null
       this.error = null
     }
   }
