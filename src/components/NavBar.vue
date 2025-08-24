@@ -3,16 +3,15 @@
     <div class="">
       <img src="@/assets/logo.svg" alt="Logo" class="h-30 w-30"/>
     </div>
-
     <ul class="hidden md:flex space-x-6 text-white font-medium">
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Main</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Risks Detection</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Features</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">How it works</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Artificial Intelligence</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">FAQ</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Register</a></li>
-      <li><a href="#" class="hover:text-blue-500 transition-colors underline">Log In</a></li>
+      <li><a href="/#main" class="hover:text-blue-500 transition-colors underline">Main</a></li>
+      <li><a href="/#risks" class="hover:text-blue-500 transition-colors underline">Risks Detection</a></li>
+      <li><a href="/#features" class="hover:text-blue-500 transition-colors underline">Features</a></li>
+      <li><a href="/#how-to-use" class="hover:text-blue-500 transition-colors underline">How it works</a></li>
+      <li><a href="/#ai" class="hover:text-blue-500 transition-colors underline">Artificial Intelligence</a></li>
+      <li><a href="/faq" class="hover:text-blue-500 transition-colors underline">FAQ</a></li>
+      <li><a href="/register" class="hover:text-blue-500 transition-colors underline">Register</a></li>
+      <li><a href="/login" class="hover:text-blue-500 transition-colors underline">Log In</a></li>
     </ul>
 
     <button 
