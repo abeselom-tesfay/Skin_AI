@@ -58,7 +58,7 @@
   </section>
 
   <!-- Carousel -->
-  <section class="py-10 px-4 md:px-20">
+  <section class="py-10 px-4 md:px-20" id="risks">
     <div class="relative">
       <!-- Carousel Images -->
 <div v-for="(item, index) in carousel" :key="index">
@@ -86,7 +86,7 @@
   <!-- What do you know section -->
    <section class="px-4 md:px-20">
     <div class="items-start">
-      <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5">
+      <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5" >
         What do you know about your skin?
       </h2>
       <p class="text-gray-900 py-2">
@@ -291,7 +291,7 @@
       </div>
       </div>
       <!-- Dots navigation -->
-      <div class="flex justify-center gap-2 mt-6">
+      <div class="flex justify-center gap-2 mt-6" id="features">
         <button
           v-for="(slide, index) in slides"
           :key="index"
@@ -344,7 +344,7 @@
 </section>
 
 <!-- How to use -->
- <section class="px-4 md:px-20 py-10">
+ <section class="px-4 md:px-20 py-10" id="how-to-use">
   <div class="md:text-start text-center mb-8">
     <h1 class="text-gray-900 font-bold mb-6 text-2xl">How to use AI Dermatologist?</h1>
   </div>
@@ -394,7 +394,7 @@
  </section>
 
  <!--AI Section-->
- <section class="px-4 md:px-20 py-10 ">
+ <section class="px-4 md:px-20 py-10" id="ai">
   <div class="grid md:grid-cols-2 gap-6">
     <div class="flex justify-center order-2 md:order-1">
       <img src="@/assets/images/ai-image.png" alt="AI Dermatologist" class="w-full max-w-sm h-auto object-contain" />
