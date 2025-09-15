@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-900 px-4 md:px-20 pt-20 text-white">
+  <section class="bg-blue-900 px-4 md:px-20 pt-20 text-white" id="main">
     <div class="items-start ">
         <h2 class="text-2xl md:text-3xl font-bold mt-20">Check your skin!</h2>
     </div>
