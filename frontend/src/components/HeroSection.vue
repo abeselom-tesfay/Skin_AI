@@ -43,9 +43,11 @@
 
     </div>
       <div class="items-start">
+        <router-link to="/check">
         <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 mt-5 px-4 rounded-full">
           GET INSTANT RESULT
         </button>
+        </router-link>
         <p class="my-5 pb-5 text-lg md:text-xl">* The scan result is not a diagnosis. To obtain an accurate diagnosis and a recommendation for treatment - consult your doctor.</p>
       </div>
   </section>

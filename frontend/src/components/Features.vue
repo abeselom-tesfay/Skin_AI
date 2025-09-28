@@ -152,9 +152,11 @@
        </div>
     </div>
         <div class="items-start mb-5">
-        <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 mt-5 px-16 rounded-full">
+         <router-link to="/check">
+         <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 mt-5 px-16 rounded-full">
           TRY NOW
-        </button>
+         </button>
+        </router-link>
       </div>
 
    </section>
@@ -233,9 +235,11 @@
           <p class="mb-6">
             Small changes can mean big problems. 7 simple questions can reveal what your skin needs to stay healthy.
           </p>
+          <router-link to="/check">
           <button class="px-14 text-white py-3 bg-red-600 rounded-full shadow-md">
             ACT NOW
           </button>
+          </router-link>
         </div>
       </div>
 
@@ -382,9 +386,11 @@
 
   </div>
   <div class="flex justify-center py-10">
-    <button class="bg-red-600 text-2xl text-white rounded-full px-16 py-3">
-      Try Now!
-    </button>
+    <router-link to="/check">
+      <button class="bg-red-600 text-2xl text-white rounded-full px-16 py-3">
+        Try Now!
+      </button>
+    </router-link>
 
   </div>
   <div class="flex flex-col py-5">
