@@ -1,57 +1,80 @@
 <template>
-  <section class="px-4 md:px-40">
+<section class="px-4 md:px-40">
     <div class="items-start">
       <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-10">
-        Why should you use AI Dermatologist?
+        Why Choose Skin AI? Advanced AI-Powered Dermatology
       </h2>
       <p class="text-gray-900 py-2">
-        Developed with dermatologists and powered by artificial intelligence.
+        Built with cutting-edge deep learning and validated through extensive medical research.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2 items-start">
       
-      <!-- First Column -->
+      <!-- First Column - Technical Excellence -->
       <div class="space-y-2">
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p>Detects 58+ skin diseases, including melanoma and skin cancer</p>
+          <p><strong>96.2% Accuracy</strong> with ensemble deep learning architecture</p>
         </div>
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p>Over 97% accuracy, based on AI and clinical database</p>
+          <p><strong>Dual-stage CNN pipeline</strong> for precise lesion analysis</p>
         </div>
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p>Result within 1 minute</p>
+          <p><strong>Real-time inference</strong> powered by TensorFlow backend</p>
         </div>
       </div>
 
-      <!-- Second Column -->
+      <!-- Second Column - AI Innovation -->
       <div class="space-y-2">
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p>Enables instant at-home screening</p>
+          <p><strong>EfficientNet + DenseNet ensemble</strong> for superior performance</p>
         </div>
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p>24/7 personal AI Consultant</p>
+          <p><strong>Advanced preprocessing</strong> with image validation and augmentation</p>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p><strong>Confidence scoring</strong> with probabilistic predictions</p>
         </div>
       </div>
 
-      <!-- Third Column (ISO image) -->
-      <div class="flex flex-col justify-start">
-        <img src="@/assets/images/iso.png" alt="ISO Certification" class="w-40 h-auto" />
+      <!-- Third Column - Technical Features -->
+      <div class="space-y-2">
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p><strong>RESTful API architecture</strong> with Flask backend</p>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p><strong>Mobile-optimized Vue.js</strong> frontend with Tailwind CSS</p>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p><strong>Cross-platform compatibility</strong> and responsive design</p>
+        </div>
       </div>
     </div>
 
@@ -84,27 +107,26 @@
   </section>
 
   <!-- What do you know section -->
-   <section class="px-4 md:px-20">
+<section class="px-4 md:px-20">
     <div class="items-start">
-      <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5" >
-        What do you know about your skin?
+      <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5">
+        Advanced Skin Lesion Classification with AI
       </h2>
       <p class="text-gray-900 py-2">
-        AI Dermatologist is a personal AI consultant that helps you understand your skin better.
+        Skin AI leverages deep learning to analyze and classify 7 critical skin conditions with medical-grade accuracy.
       </p>
-
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-2 items-start">
-      <!-- First Column -->
+      <!-- First Column - Cancer Detection -->
       <div class="space-y-2">
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
         <div class="flex flex-col">
-          <p class="font-bold text-gray-900">Skin cancer</p>
-          <span>(melanoma, BKK, BCC, etc.)</span>
+          <p class="font-bold text-gray-900">Malignant Melanoma (MEL)</p>
+          <span class="text-sm">High-risk skin cancer detection</span>
         </div>
         </div>
         <div class="flex items-start gap-2">
@@ -112,28 +134,30 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
           <div class="flex flex-col">
-          <p class="font-bold text-gray-900">Precancerous lesions</p>
-          <span>(blue and dysplastic nevus, etc.)</span>
+          <p class="font-bold text-gray-900">Basal Cell Carcinoma (BCC)</p>
+          <span class="text-sm">Common skin cancer identification</span>
           </div>
-
         </div>
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p class="font-bold text-gray-900">6 types of acne</p>
+          <div class="flex flex-col">
+            <p class="font-bold text-gray-900">Actinic Keratosis (AKIEC)</p>
+            <span class="text-sm">Pre-cancerous lesion analysis</span>
+          </div>
         </div>
       </div>
 
-      <!--Second Column-->
+      <!-- Second Column - Benign Conditions -->
       <div class="space-y-2">
         <div class="flex items-start gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <div>
-           <p class="font-bold text-gray-900">Benign formations</p>
-          <span>(moles, angeoma, dermatofibroma, etc.)</span>
+          <div class="flex flex-col">
+           <p class="font-bold text-gray-900">Benign Keratosis (BKL)</p>
+          <span class="text-sm">Non-cancerous growth detection</span>
           </div>
         </div>
         <div class="flex items-start gap-2">
@@ -141,25 +165,61 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
           <div class="flex flex-col">
-            <p class="font-bold text-gray-900">Papilloma virus</p>
-            <span>(warts, papillomas, mollusks, etc.)</span>
+            <p class="font-bold text-gray-900">Melanocytic Nevi (NV)</p>
+            <span class="text-sm">Common mole classification</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <div class="flex flex-col">
+            <p class="font-bold text-gray-900">Dermatofibroma (DF)</p>
+            <span class="text-sm">Benign skin nodule recognition</span>
           </div>
         </div>
       </div>
-       <div class="flex rounded-md max-md:hidden bg-cyan-400 p-4">
-         <p class="text-white">AI Dermatologist is based on Artificial Intelligence technologies</p>
-           <img src="@/assets/images/icon.png"/>
-       </div>
-    </div>
-        <div class="items-start mb-5">
-         <router-link to="/check">
-         <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 mt-5 px-16 rounded-full">
-          TRY NOW
-         </button>
-        </router-link>
-      </div>
 
-   </section>
+      <!-- Third Column - Technical Features -->
+      <div class="space-y-2">
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <div class="flex flex-col">
+            <p class="font-bold text-gray-900">Vascular Lesions (VASC)</p>
+            <span class="text-sm">Blood vessel growth analysis</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <div class="flex flex-col">
+            <p class="font-bold text-gray-900">Real-time Analysis</p>
+            <span class="text-sm">Sub-second prediction speeds</span>
+          </div>
+        </div>
+        <div class="flex items-start gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <div class="flex flex-col">
+            <p class="font-bold text-gray-900">Confidence Scoring</p>
+            <span class="text-sm">Probabilistic AI predictions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="items-start mb-5">
+      <router-link to="/check">
+        <button class="bg-red-600 hover:bg-cyan-700 text-white font-semibold py-3 mt-5 px-16 rounded-full transition duration-300">
+          TEST SKIN AI
+        </button>
+      </router-link>
+    </div>
+</section>
 
     <!-- Info -->
     <section class="px-4 md:px-20 mt-10">
@@ -502,31 +562,31 @@ const carousel = [
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "Software Engineer",
+    name: "Mengstu Hadush",
+    role: "Machine Learning Engineer",
     text: "This platform transformed the way I work. The UI is sleek and the experience is seamless.",
-    image: "https://i.pravatar.cc/100?img=1",
+    image: new URL('@/assets/images/mengie.jpg', import.meta.url).href,
     rating: 5,
   },
   {
-    name: "Sarah Lee",
-    role: "Product Designer",
+    name: "Kibrom Mekonnen",
+    role: "Data Scientist",
     text: "The design and functionality exceeded my expectations. I highly recommend it to professionals.",
-    image: "https://i.pravatar.cc/100?img=2",
+    image: new URL('@/assets/images/kbo.jpg', import.meta.url).href,
     rating: 4,
   },
   {
-    name: "Michael Brown",
-    role: "Data Scientist",
+    name: "Mekonnen Haileselassie",
+    role: "Full-stack Developer",
     text: "A truly innovative solution that makes my workflow faster and more enjoyable.",
-    image: "https://i.pravatar.cc/100?img=3",
+    image: new URL('@/assets/images/mokie.jpg', import.meta.url).href,
     rating: 5,
   },
   {
-    name: "Emily Carter",
-    role: "Project Manager",
+    name: "Misgina Gebretsadik",
+    role: "Frontend Developer",
     text: "Great support and intuitive features. It has become an essential tool in our team.",
-    image: "https://i.pravatar.cc/100?img=4",
+    image: new URL('@/assets/images/misgie.jpg', import.meta.url).href,
     rating: 4,
   },
 ];
