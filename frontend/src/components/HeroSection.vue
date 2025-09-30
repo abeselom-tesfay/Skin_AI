@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-900 px-4 md:px-20 pt-20 text-white" id="main">
+  <section class="bg-cyan-700 px-4 md:px-20 pt-20 text-white" id="main">
     <div class="items-start ">
         <h2 class="text-2xl md:text-3xl font-bold mt-20">Check your skin!</h2>
     </div>
@@ -44,7 +44,7 @@
     </div>
       <div class="items-start">
         <router-link to="/check">
-        <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 mt-5 px-4 rounded-full">
+        <button class="bg-cyan-800 hover:bg-cyan-900 text-white font-semibold py-2 mt-5 px-4 rounded-full">
           GET INSTANT RESULT
         </button>
         </router-link>

@@ -14,7 +14,7 @@
             id="email"
             v-model="email"
             required
-            class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-cyan-500 focus:outline-none"
             placeholder="Enter your email"
           />
         </div>
@@ -29,26 +29,26 @@
             id="password"
             v-model="password"
             required
-            class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-cyan-500 focus:outline-none"
             placeholder="Enter your password"
           />
         </div>
 
         <div class="text-left">
-          <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+          <a href="#" class="text-cyan-500 hover:underline">Forgot Password?</a>
         </div>
 
         <!-- Submit Buttons --> 
         <div class="flex flex-col items-center gap-4 mt-10">
         <button
             type="submit"
-            class="w-60 bg-blue-600 text-white py-3 rounded-full hover:bg-blue-700 transition duration-200"
+            class="w-60 bg-cyan-600 text-white py-3 rounded-full hover:bg-cyan-700 transition duration-200"
         >
             Login
         </button>
         <button
             type="button"
-            class="w-60 border border-blue-500 text-blue-500 py-3 rounded-full hover:bg-blue-700 hover:text-white transition duration-200"
+            class="w-60 border border-cyan-500 text-cyan-500 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200"
         >
             Register
         </button>

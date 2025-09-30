@@ -53,8 +53,8 @@
         <div class="flex items-center gap-2 text-gray-700 text-sm">
           <input type="checkbox" id="terms" v-model="acceptedTerms" />
           <label for="terms">
-            I accept the <a href="#" class="text-blue-500 hover:underline">Terms of Use</a> and 
-            <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a>
+            I accept the <a href="#" class="text-cyan-700 hover:underline">Terms of Use</a> and 
+            <a href="#" class="text-cyan-700 hover:underline">Privacy Policy</a>
           </label>
         </div>
 
@@ -62,13 +62,13 @@
         <div class="flex flex-col items-center gap-4 mt-10">
           <button
             type="submit"
-            class="w-60 bg-blue-600 text-white py-3 rounded-full hover:bg-blue-700 transition duration-200"
+            class="w-60 bg-cyan-700 text-white py-3 rounded-full hover:bg-cyan-600 transition duration-200"
           >
             Register
           </button>
           <button
             type="button"
-            class="w-60 border border-blue-500 text-blue-500 py-3 rounded-full hover:bg-blue-700 hover:text-white transition duration-200"
+            class="w-60 border border-cyan-700 text-cyan-700 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200"
           >
             I have an Account
           </button>
