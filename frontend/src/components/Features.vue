@@ -221,69 +221,69 @@
     </div>
 </section>
 
-    <!-- Info -->
-    <section class="px-4 md:px-20 mt-10">
-      <div class="flex justify-center">
-        <div class="flex items-center gap-2 rounded-md bg-red-100 px-4 py-2">
-          <!-- Info SVG -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 1010 10A10 10 0 0012 2z" />
+<!-- Info -->
+<section class="px-4 md:px-20 mt-10">
+  <div class="flex justify-center">
+    <div class="flex items-center gap-2 rounded-md bg-cyan-100 px-4 py-2">
+      <!-- Info SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 1010 10A10 10 0 0012 2z" />
+      </svg>
+      <p class="ml-1"><span class="font-bold">Technical Note:</span> For optimal AI analysis, upload clear, well-lit images with the lesion centered for feature extraction.</p>
+    </div>
+  </div>
+       <!--Description-->
+      <div class="flex flex-col md:flex-row justify-center mt-20">
+        <div class="md:w-1/3 ml-20 order-2 md:order-1 flex justify-center md:justify-start">
+        <img src="@/assets/images/man.png" class="items-center"/>
+        </div>
+        <div class="md:w-2/3 order-1 md:order-2 items-start mb-5">
+         <div class="items-start">
+          <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5">
+            AI-Powered Early Detection Capabilities
+          </h2>
+          <p class="text-gray-500 py-2">
+            Skin AI demonstrates 96.2% accuracy in identifying malignant skin lesions through advanced computer vision.
+          </p>
+          <p class="font-bold text-gray-500">Early detection significantly improves treatment outcomes for skin cancer patients.</p>
+        </div>
+        <!--list-->
+       <div class="space-y-1 mt-3">
+        <div class="flex items-start gap-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
           </svg>
-          <p class="ml-1"><span class="font-bold">Tip:</span> For more accurate results, upload 3 high-quality photos so the AI can thoroughly analyze the affected skin area.</p>
+          <p class="text-gray-500 ">Melanoma survival rates exceed 99% when detected at early stages through regular screening.</p>
         </div>
+        <div class="flex items-start gap-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p class="text-gray-500">AI systems can analyze thousands of visual features beyond human perception limits.</p>
+        </div>
+        <div class="flex items-start gap-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p class="text-gray-500">Computer vision reduces diagnostic variability compared to manual assessment.</p>
+        </div>
+        <div class="flex items-start gap-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p class="text-gray-500">Real-time analysis enables immediate risk assessment and medical guidance.</p>
+        </div>          
+        <div class="flex items-start gap-2 px-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
+          </svg>
+          <p class="text-gray-500">Ensemble learning combines multiple neural networks for enhanced diagnostic reliability.</p>
+        </div>
+        
+       </div>
+       </div>
       </div>
-           <!--Description-->
-        <div class="flex flex-col md:flex-row justify-center mt-20">
-          <div class="md:w-1/3 ml-20 order-2 md:order-1 flex justify-center md:justify-start">
-          <img src="@/assets/images/man.png" class="items-center"/>
-          </div>
-          <div class="md:w-2/3 order-1 md:order-2 items-start mb-5">
-           <div class="items-start">
-            <h2 class="text-xl text-gray-900 md:text-3xl font-bold mt-5">
-              AI Dermatologist can save your life
-            </h2>
-            <p class="text-gray-500 py-2">
-              One of the most dangerous diseases that AI Dermatologist can help identify is skin cancer.
-            </p>
-            <p class="font-bold text-gray-500">Skin cancer is the most common cancer in the United States and worldwide.</p>
-          </div>
-          <!--list-->
-         <div class="space-y-1 mt-3">
-          <div class="flex items-start gap-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
-            </svg>
-            <p class="text-gray-500 ">More than 2 people die of skin cancer every hour all over the world.</p>
-          </div>
-          <div class="flex items-start gap-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
-            </svg>
-            <p class="text-gray-500">Melanoma is a skin cancer that can spread earlier and more quickly than other skin cancers.</p>
-          </div>
-          <div class="flex items-start gap-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
-            </svg>
-            <p class="text-gray-500">Melanoma is the second most common of all cancers in men and women ages 15-29.</p>
-          </div>
-          <div class="flex items-start gap-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
-            </svg>
-            <p class="text-gray-500">1 in 50 people will develop skin cancer in their lifetime.</p>
-          </div>          
-          <div class="flex items-start gap-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
-            </svg>
-            <p class="text-gray-500">When detected early, the 5-year survival rate for melanoma is 99 percent.</p>
-          </div>
-          
-         </div>
-         </div>
-        </div>
-    </section>
+</section>
 
     <!-- bg image-->
     <section class="px-4 md:px-20 justify-center">
