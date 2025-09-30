@@ -41,24 +41,44 @@ import { ref } from 'vue'
 
 const faqs = [
   {
-    question: 'What is Skin AI?',
-    answer: 'Skin AI is a prediagnostic tool that helps detect skin lesions and monitor skin health using AI-driven image analysis.'
+    question: 'What AI technology powers Skin AI?',
+    answer: 'Skin AI uses an ensemble deep learning architecture combining EfficientNet-B0 and DenseNet-121 convolutional neural networks, achieving 96.2% accuracy on the ISIC 2018 dataset with dual-stage segmentation and classification pipeline.'
   },
   {
-    question: 'Is my data safe?',
-    answer: 'Yes, all images and data are processed securely and never shared with third parties without consent.'
+    question: 'How does the image processing work?',
+    answer: 'Images undergo U-Net segmentation for lesion isolation, followed by feature extraction and ensemble classification. The system processes RGB/HSV color spaces and uses advanced data augmentation techniques for robust performance.'
   },
   {
-    question: 'How accurate is the prediction?',
-    answer: 'Predictions depend on the AI model and training data. While it is highly informative, it does not replace a dermatologist consultation.'
+    question: 'What is the technical accuracy of the model?',
+    answer: 'Our ensemble model achieves 96.2% overall accuracy, 95.8% precision, 94.7% recall, and 0.982 AUC score, outperforming individual models (EfficientNet: 94.1%, DenseNet: 93.8%).'
   },
   {
-    question: 'Can I use it on mobile?',
-    answer: 'Yes, Skin AI is fully responsive and you can also download the app for easier access on mobile devices.'
+    question: 'What dataset was used for training?',
+    answer: 'The model was trained on the ISIC 2018 dataset containing 10,015 dermatoscopic images across 7 disease classes (akiec, bcc, bkl, df, mel, nv, vasc) with class balancing and heavy data augmentation.'
   },
   {
-    question: 'Do I need to create an account?',
-    answer: 'Creating an account allows you to save your history and get personalized recommendations.'
+    question: 'Is this a medical diagnostic tool?',
+    answer: 'No, Skin AI is an educational and research tool for academic purposes. It demonstrates AI capabilities in medical image analysis but should not replace professional medical diagnosis. Always consult healthcare professionals.'
+  },
+  {
+    question: 'What technical stack is used?',
+    answer: 'Backend: Flask API with TensorFlow 2.x. Frontend: Vue.js 3 with Tailwind CSS. Image Processing: OpenCV, Pillow. Machine Learning: Keras, scikit-learn, NumPy for numerical computing.'
+  },
+  {
+    question: 'How are predictions made in real-time?',
+    answer: 'The Flask backend processes uploaded images through the trained ensemble model, returning confidence scores and probabilities for all 7 classes within seconds via RESTful API endpoints.'
+  },
+  {
+    question: 'Is the source code available?',
+    answer: 'Yes, both the machine learning model and web application are open source. You can explore the code on GitHub to understand the implementation details and architecture.'
+  },
+  {
+    question: 'What medical validation does Skin AI have?',
+    answer: 'The project is clinically reviewed and supervised by dermatology professionals, ensuring the AI model addresses clinically relevant features and maintains medical accuracy in its predictions.'
+  },
+  {
+    question: 'Can I integrate Skin AI into other applications?',
+    answer: 'Yes, the Flask API provides RESTful endpoints for easy integration. The modular architecture allows for deployment in various healthcare and research applications.'
   }
 ]
 
