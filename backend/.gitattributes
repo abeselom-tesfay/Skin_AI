@@ -1,1 +1,2 @@
 backend/models/skin_lesion_model_final.keras filter=lfs diff=lfs merge=lfs -text
+models/skin_lesion_model_final.keras filter=lfs diff=lfs merge=lfs -text
