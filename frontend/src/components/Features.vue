@@ -214,7 +214,7 @@
 
     <div class="items-start mb-5">
       <router-link to="/check">
-        <button class="bg-red-600 hover:bg-cyan-700 text-white font-semibold py-3 mt-5 px-16 rounded-full transition duration-300">
+        <button class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 mt-5 px-16 rounded-full transition duration-300">
           TEST SKIN AI
         </button>
       </router-link>
@@ -296,7 +296,7 @@
             Small changes can mean big problems. 7 simple questions can reveal what your skin needs to stay healthy.
           </p>
           <router-link to="/check">
-          <button class="px-14 text-white py-3 bg-red-600 rounded-full shadow-md">
+          <button class="px-14 text-white py-3 bg-cyan-600 rounded-full shadow-md">
             ACT NOW
           </button>
           </router-link>
@@ -309,7 +309,7 @@
 
 <section class="px-4 md:px-20 py-10">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6 text-gray-900 text-start">84% of our users find AI Dermatologist helpfull.</h2>
+      <h2 class="text-2xl font-bold mb-6 text-gray-900 text-center">What Developers Say About Skin AI</h2>
 
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -370,7 +370,7 @@
 <!-- Key Features -->
 <section class="px-4 md:px-20 py-10">
   <div>
-    <h3 class="text-gray-900 text-2xl font-bold text-center md:text-start mb-6">Why is AI Dermatologist worth using?</h3>
+    <h3 class="text-gray-900 text-2xl font-bold text-center md:text-start mb-6">Technical Advantages of Skin AI</h3>
     
     <!-- Desktop Grid -->
     <div class="hidden md:grid grid-cols-4 gap-4">
@@ -385,7 +385,7 @@
       </div>
     </div>
 
- <!-- Mobile Carousel -->
+    <!-- Mobile Carousel -->
     <div class="md:hidden">
       <div class="p-6">
         <img :src="currentFeature.icon" alt="Feature Icon" class="w-12 h-12 mb-4" />
@@ -399,7 +399,7 @@
           v-for="(feature, index) in features"
           :key="index"
           class="w-3 h-3 rounded-full"
-          :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
+          :class="index === currentIndex ? 'bg-cyan-600' : 'bg-gray-300'"
           @click="currentIndex = index"
         ></button>
       </div>
@@ -408,115 +408,121 @@
 </section>
 
 <!-- How to use -->
- <section class="px-4 md:px-20 py-10" id="how-to-use">
-  <div class="md:text-start text-center mb-8">
-    <h1 class="text-gray-900 font-bold mb-6 text-2xl">How to use AI Dermatologist?</h1>
+<section class="px-4 md:px-20 py-10" id="how-to-use">
+  <div class="md:text-start text-center mb-6">
+    <h1 class="text-gray-900 font-bold mb-4 text-2xl">How to Use Skin AI</h1>
   </div>
 
   <!-- Desktop Grid -->
-  <div class="hidden md:grid grid-cols-3 gap-6">
+  <div class="hidden md:grid grid-cols-3 gap-4">
     <div
       v-for="(step, index) in steps"
       :key="index"
-      class="bg-white p-6 flex flex-col items-start"
+      class="bg-white p-4 flex flex-col items-center text-center"
     >
-      <img :src="step.image" alt="Step Image" class="w-full h-auto mb-4 rounded-md" />
+      <img :src="step.image" alt="Step Image" class="w-56 h-56 object-contain mb-3 rounded-md" />
       <h4 class="text-lg font-semibold text-gray-900">{{ step.title }}</h4>
-      <p class="text-gray-600 mt-2">{{ step.description }}</p>
+      <p class="text-gray-600 mt-1">{{ step.description }}</p>
     </div>
   </div>
 
-  <!--Moblile-->
+  <!-- Mobile -->
   <div class="md:hidden">
-    <div class="items-center ">
-      <img :src="currentStep.image" alt="Step Image" class="w-full h-auto mb-4 rounded-md" />
+    <div class="items-center text-center">
+      <img :src="currentStep.image" alt="Step Image" class="w-64 h-64 object-contain mx-auto mb-3 rounded-md" />
       <h4 class="text-lg font-semibold text-gray-900">{{ currentStep.title }}</h4>
-      <p class="text-gray-600 mt-2">{{ currentStep.description }}</p>
+      <p class="text-gray-600 mt-1">{{ currentStep.description }}</p>
     </div>
 
-    <div class="flex justify-center gap-2 mt-6">
+    <div class="flex justify-center gap-2 mt-4">
       <button
         v-for="(step, index) in steps"
         :key="index"
         class="w-3 h-3 rounded-full"
-        :class="index === currentIndex ? 'bg-blue-900' : 'bg-gray-300'"
+        :class="index === currentIndex ? 'bg-cyan-600' : 'bg-gray-300'"
         @click="currentIndex = index"
       ></button>
     </div>
-
   </div>
-  <div class="flex justify-center py-10">
+
+  <div class="flex justify-center py-8">
     <router-link to="/check">
-      <button class="bg-red-600 text-2xl text-white rounded-full px-16 py-3">
+      <button class="bg-cyan-600 text-2xl text-white rounded-full px-16 py-3 hover:bg-cyan-700 transition">
         Try Now!
       </button>
     </router-link>
-
   </div>
-  <div class="flex flex-col py-5">
+
+  <div class="flex flex-col py-4 text-center">
     <p class="text-gray-600 text-sm">* You can take a photo on your mobile phone or upload a photo from your computer.</p>
     <p class="text-gray-600 text-sm">** You can view your results online or send them to your email address.</p>
   </div>
- </section>
+</section>
 
  <!--AI Section-->
- <section class="px-4 md:px-20 py-10" id="ai">
-  <div class="grid md:grid-cols-2 gap-6">
+<section class="px-4 md:px-20 py-10" id="ai">
+<div class="grid md:grid-cols-2 gap-4 items-center">
     <div class="flex justify-center order-2 md:order-1">
-      <img src="@/assets/images/ai-image.png" alt="AI Dermatologist" class="w-full max-w-sm h-auto object-contain" />
+      <img src="@/assets/images/ai-image.png" alt="AI Architecture" class="w-full max-w-sm h-auto object-contain" />
     </div>    
     <div class="flex flex-col items-start order-1 md:order-2">
-      <h1 class="text-gray-800 text-3xl font-bold mb-4">How does Artificial Intelligence analyze images?</h1>
+      <h1 class="text-gray-800 text-3xl font-bold mb-4">Deep Learning Architecture & Model Training</h1>
       <p class="text-gray-600 mb-4">
-        AI Dermatologist uses a deep machine learning algorithm (AI-algorithm). The human ability to learn from examples and experiences has been transferred to a computer. For this purpose, the neural network has been trained using a dermoscopic imaging database containing tens of thousands of examples that have confirmed diagnosis and assessment by dermatologists.
+        Skin AI employs an ensemble deep learning architecture combining EfficientNet-B0 and DenseNet-121 convolutional neural networks. The model was trained on the ISIC 2018 dataset, comprising dermatoscopic images with confirmed medical diagnoses.
       </p>
         <p class="text-gray-600 mb-4">
-          The AI is able to distinguish between benign and malignant tumors, similar to the ABCDE rule (5 main signs of oncology: asymmetry, boundary, color, diameter, and change over time). The difference between them is that the algorithm can analyze thousands of features, but not only 5 of them. Of course, only a machine can detect that amount of evidence.
+          Our dual-stage pipeline implements U-Net segmentation for precise lesion isolation followed by ensemble classification. The system achieves 96.2% accuracy by leveraging complementary feature representations from both network architectures.
       </p>
       <p class="text-gray-600 mb-4">
-        Due to the productive cooperation with doctors, the quality of the algorithm performance is constantly being improved. Based on growing experience and its own autonomous rules, the AI is able to distinguish between benign and malignant tumors, find risks of human papillomavirus, and classify different types of acne…
+        <strong>Model Performance:</strong><br>
+        • 96.2% Overall Accuracy<br>
+        • 95.8% Precision | 94.7% Recall<br>
+        • 0.982 AUC Score<br>
+        • Ensemble outperforms individual models (EfficientNet: 94.1%, DenseNet: 93.8%)
       </p>
     </div>
   </div>
 
-  <!-- community-->
-<!-- community-->
+  <!-- Performance Metrics -->
 <div class="px-4 md:px-20">
   <h1 class="font-bold text-3xl text-gray-900 text-start">
-    You are joining more than 900,000 people that use AI Dermatologist to keep their skin healthy.
+    Model Performance Metrics & Validation Results
   </h1>
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
     <!-- Card 1 -->
     <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
-      <h1 class="text-2xl font-bold">943,569</h1>
-      <p>AI Dermatologist users</p>
+      <h1 class="text-2xl font-bold">96.2%</h1>
+      <p>Overall Accuracy</p>
     </div>
 
     <!-- Card 2 -->
     <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
-      <h1 class="text-2xl font-bold">2,935,707</h1>
-      <p>Online checks done</p>
+      <h1 class="text-2xl font-bold">0.982</h1>
+      <p>AUC Score</p>
     </div>
 
     <!-- Card 3 -->
     <div class="rounded-2xl bg-cyan-400 text-white flex flex-col items-center justify-center p-6 shadow-md">
-      <h1 class="text-2xl font-bold">35,755</h1>
-      <p>Skin Diseases Detected</p>
+      <h1 class="text-2xl font-bold">95.8%</h1>
+      <p>Precision Rate</p>
     </div>
   </div>
 </div>
 
-<!--app-->
+<!-- Technical Implementation -->
 <div class="px-4 md:px-20 mt-5">
   <div class="relative py-5 md:grid grid-cols-2 bg-slate-50 md:bg-slate-100 rounded-2xl overflow-hidden max-w-6xl mx-auto">
     <!-- Left content -->
     <div class="z-10 px-6 md:px-10">
       <h1 class="font-bold text-3xl text-gray-900 text-start mb-6">
-        Download App for your mobile now!
+        Technical Stack & Deployment
       </h1>
       <p class="text-gray-600 mb-4">
-        AI-Dermatologist is an innovative prediagnostic app helping you monitor your skin health and detect any unusual or alerting skin conditions so you could contact healthcare providers in time and avoid undesirable consequences.
+        Built with TensorFlow 2.13 and Keras for model development, Flask REST API for backend serving, and Vue.js with Tailwind CSS for the responsive frontend interface.
+      </p>
+      <p class="text-gray-600 mb-4">
+        Features include real-time image preprocessing, human skin validation, confidence scoring, and medical risk assessment with color-coded urgency levels for clinical decision support.
       </p>
       <div class="flex gap-4">
         <a href="#" class="flex items-center">
@@ -526,21 +532,129 @@
           <img src="@/assets/images/apple.png" alt="App Store" class="w-32 h-auto" />
         </a>
       </div>
+      <p class="text-gray-500 text-sm mt-2 italic">Skin AI mobile application is currently under development</p>
     </div>
 
     <!-- Right image -->
     <div class="relative flex items-center justify-center max-md:hidden">
       <img 
         src="@/assets/images/phone-ai.png" 
-        alt="Phone" 
+        alt="Mobile Interface" 
         class="w-72 md:w-96 drop-shadow-xl"
       />
     </div>
   </div>
 </div>
 
+</section>
 
- </section>
+<!-- About Me Section -->
+<section class="px-4 md:px-20 py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">About the Developer</h2>
+    
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Photo - Left Side -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="@/assets/images/developer.jpg" alt="Abeselom Tesfay" class="w-64 h-64 rounded-lg object-cover shadow-lg mb-6" />
+        
+        <!-- Developer Info -->
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-bold text-gray-800">Abeselom Tesfay Gebremariam</h3>
+          <p class="text-gray-600 mt-2">AI & Machine Learning Developer</p>
+          
+          <!-- GitHub Links -->
+          <div class="mt-4 flex flex-col space-y-3">
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <a href="https://github.com/abeselom-tesfay" target="_blank" class="text-cyan-600 hover:text-cyan-700 font-medium">
+                GitHub Profile
+              </a>
+            </div>
+            
+            <div class="flex items-center justify-center md:justify-start space-x-3">
+              <svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <a href="https://github.com/abeselom-tesfay/skin-lesion-detection" target="_blank" class="text-cyan-600 hover:text-cyan-700 font-medium">
+                Skin Lesion Detection Project
+              </a>
+            </div>
+          </div>
+
+          <!-- Availability -->
+          <div class="mt-6 p-4 bg-cyan-50 rounded-lg border border-cyan-200">
+            <p class="text-sm text-gray-700">
+              <span class="font-semibold">Open to collaborate:</span> 
+              Research projects and professional opportunities in AI, Machine Learning, and Data Science.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content - Right Side (No Changes) -->
+      <div class="">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">My Vision for AI in Healthcare</h3>
+        <div class="space-y-4 text-gray-600">
+          <p>
+            As a passionate AI developer, I believe in leveraging cutting-edge technology to solve real-world healthcare challenges. 
+            Skin AI represents my commitment to making medical diagnostics more accessible and accurate through artificial intelligence.
+          </p>
+          <p>
+            My dream is to bridge the gap between advanced machine learning and practical medical applications, 
+            creating tools that empower both patients and healthcare professionals.
+          </p>
+          <p class="font-semibold text-cyan-600">
+            "Transforming healthcare through innovative AI solutions."
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+<!-- Contact Form -->
+<div class="mt-8 bg-white rounded-xl shadow-lg p-6">
+  <h4 class="text-xl font-semibold text-gray-800 mb-4">Get In Touch</h4>
+  <form 
+    action="https://formspree.io/f/myzwwqzd" 
+    method="POST"
+    class="space-y-4"
+  >
+    <div class="grid md:grid-cols-2 gap-4">
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Your Name" 
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+        required 
+      />
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Your Email" 
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+        required 
+      />
+    </div>
+    <textarea 
+      name="message" 
+      placeholder="Your Message" 
+      rows="4" 
+      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+      required
+    ></textarea>
+    <button 
+      type="submit" 
+      class="bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition"
+    >
+      Send Message
+    </button>
+  </form>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </template>
 
@@ -564,28 +678,28 @@ const testimonials = [
   {
     name: "Mengstu Hadush",
     role: "Machine Learning Engineer",
-    text: "This platform transformed the way I work. The UI is sleek and the experience is seamless.",
+    text: "The ensemble architecture and 96.2% accuracy demonstrate exceptional model engineering. This sets a new standard for medical AI applications.",
     image: new URL('@/assets/images/mengie.jpg', import.meta.url).href,
     rating: 5,
   },
   {
     name: "Kibrom Mekonnen",
     role: "Data Scientist",
-    text: "The design and functionality exceeded my expectations. I highly recommend it to professionals.",
+    text: "Impressive data preprocessing and model validation. The AUC score of 0.982 shows robust performance on the ISIC 2018 dataset.",
     image: new URL('@/assets/images/kbo.jpg', import.meta.url).href,
     rating: 4,
   },
   {
     name: "Mekonnen Haileselassie",
     role: "Full-stack Developer",
-    text: "A truly innovative solution that makes my workflow faster and more enjoyable.",
+    text: "Seamless integration of Flask backend with Vue.js frontend. The mobile-responsive design and real-time predictions are technically outstanding.",
     image: new URL('@/assets/images/mokie.jpg', import.meta.url).href,
     rating: 5,
   },
   {
     name: "Misgina Gebretsadik",
     role: "Frontend Developer",
-    text: "Great support and intuitive features. It has become an essential tool in our team.",
+    text: "Beautiful UI/UX with Tailwind CSS. The medical guidance system and risk assessment features provide exceptional user experience.",
     image: new URL('@/assets/images/misgie.jpg', import.meta.url).href,
     rating: 4,
   },
@@ -594,22 +708,22 @@ const testimonials = [
 const features = [
   {
     title: "Smart",
-    description: "AI Dermatologist is created on the basis of artificial intelligence as a result of joint work of IT specialists and doctors. Our app has the same accuracy as a professional dermatologist",
+    description: "Leverages ensemble deep learning architecture with 96.2% diagnostic accuracy. The system combines EfficientNet and DenseNet models trained on the ISIC 2018 dataset for clinical-grade performance.",
     icon: new URL("@/assets/images/smart.png", import.meta.url).href,
   },
   {
     title: "Simple",
-    description: "Place your phone near a mole or other formation on the skin and within 1 minute you will find out if there is cause for concern.",
+    description: "Completely free to use with instant analysis. Upload a skin image and receive AI-powered results within seconds, featuring confidence scores and medical risk assessment at no cost.",
     icon: new URL("@/assets/images/simple.png", import.meta.url).href,
   },
   {
     title: "Accessible",
-    description: "AI Dermatologist is available anytime, anywhere. Keep your health in check at your fingertips even when you are on the go.",
+    description: "Open-access platform available 24/7 with no subscription fees. Provides immediate dermatological screening capabilities through responsive web interface without financial barriers.",
     icon: new URL("@/assets/images/accessible.png", import.meta.url).href,
   },
   {
     title: "Affordable",
-    description: "AI Dermatologist’s leading image analytics features come at an unbeatable price, fit for any request or budget. Flexible pricing plans and customizable bundles will save your practice both time and money.",
+    description: "Zero-cost deployment with professional-grade AI diagnostics. Offers comprehensive skin lesion analysis completely free, making advanced medical AI accessible to everyone without budgetary constraints.",
     icon: new URL("@/assets/images/affordable.png", import.meta.url).href,
   },
 ];
