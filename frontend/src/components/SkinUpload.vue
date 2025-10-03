@@ -169,9 +169,6 @@
             <p v-if="errorDetails" class="text-red-700 mb-2 text-sm md:text-base">
               <span class="font-semibold">Detected:</span> {{ errorDetails }}
             </p>
-            <p v-if="errorConfidence" class="text-red-600 text-xs md:text-sm mb-2">
-              <span class="font-semibold">Confidence:</span> {{ errorConfidence }}
-            </p>
             <p v-if="errorSuggestion" class="text-blue-700 font-medium text-sm md:text-base">
               💡 {{ errorSuggestion }}
             </p>
