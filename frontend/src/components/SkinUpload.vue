@@ -146,8 +146,22 @@
         </div>
       </div>
 
-      <!-- Enhanced Error Message -->
-      <div v-if="error" class="bg-red-50 border border-red-200 rounded-xl p-4 md:p-6 mt-6 mx-2">
+<!-- Enhanced Error Message with Image Preview -->
+<div v-if="error" class="bg-white rounded-2xl shadow-xl p-4 md:p-8 mx-2">
+  <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">Analysis Results</h2>
+  
+  <div class="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8">
+    <!-- Image Preview -->
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-3 md:mb-4">Uploaded Image</h3>
+      <img :src="imagePreview" class="w-full rounded-lg shadow-md max-h-64 md:max-h-80 object-cover" />
+    </div>
+
+    <!-- Error Details -->
+    <div class="space-y-4 md:space-y-6">
+      <h3 class="font-semibold text-gray-700 mb-3 md:mb-4">Validation Result</h3>
+      
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 md:p-6">
         <div class="flex items-start">
           <div class="text-xl md:text-2xl mr-3">🚫</div>
           <div>
@@ -164,6 +178,20 @@
           </div>
         </div>
       </div>
+
+      <!-- Helpful Tips -->
+      <div class="p-4 bg-blue-50 rounded-lg">
+        <h4 class="font-semibold text-blue-800 mb-2">📝 Tips for Better Results:</h4>
+        <ul class="text-sm text-blue-700 space-y-1">
+          <li>• Ensure good lighting on the skin area</li>
+          <li>• Focus on clear, visible skin lesions</li>
+          <li>• Avoid photos of animals, objects, or text</li>
+          <li>• Make sure the skin is clearly visible in the image</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- Loading Overlay -->
       <div v-if="loading" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
