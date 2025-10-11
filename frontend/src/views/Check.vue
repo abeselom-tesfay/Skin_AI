@@ -37,8 +37,7 @@
         </button>
       </div>
 
-      <!-- Show ImageUpload component once Got It is clicked -->
-      <!-- <ImageUpload v-else /> -->
+      <!-- <SkinUpload v-else /> -->
       <SkinUpload v-else />
     </div>
   </section>
@@ -46,7 +45,6 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import ImageUpload from '@/components/ImageUpload.vue'
 import SkinUpload from '../components/SkinUpload.vue'
 
 const steps = [
@@ -58,7 +56,7 @@ const steps = [
 const currentIndex = ref(0)
 const currentStep = computed(() => steps[currentIndex.value])
 
-const showUpload = ref(false) // Controls whether to show ImageUpload
+const showUpload = ref(false) // Controls whether to show SkinUpload
 
 const prevStep = () => {
   currentIndex.value = (currentIndex.value - 1 + steps.length) % steps.length
