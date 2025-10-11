@@ -9,6 +9,7 @@
       <li><a href="/#risks" class="hover:text-blue-500 transition-colors underline">Risks Detection</a></li>
       <li><a href="/#features" class="hover:text-blue-500 transition-colors underline">Features</a></li>
       <li><a href="/#how-to-use" class="hover:text-blue-500 transition-colors underline">How it works</a></li>
+      <li><a href="/samples" class="hover:text-blue-500 transition-colors underline">Samples</a></li>
       <li><a href="/#ai" class="hover:text-blue-500 transition-colors underline">Artificial Intelligence</a></li>
       <li><a href="/faq" class="hover:text-blue-500 transition-colors underline">FAQ</a></li>
       <li><a href="/register" class="hover:text-blue-500 transition-colors underline">Register</a></li>
@@ -41,6 +42,7 @@
       <a href="/#risks" class="hover:text-cyan-500 underline" @click="isOpen = false">Risks</a>
       <a href="/#features" class="hover:text-cyan-500 underline" @click="isOpen = false">Detection Features</a>
       <a href="/#how-to-use" class="hover:text-cyan-500 underline" @click="isOpen = false">How it works</a>
+      <a href="/samples" class="hover:text-cyan-500 underline" @click="isOpen = false">Samples</a>
       <a href="/#ai" class="hover:text-cyan-500 underline" @click="isOpen = false">Artificial Intelligence</a>
       <a href="/faq" class="hover:text-cyan-500 underline" @click="isOpen = false">FAQ</a>
       <a href="/register" class="hover:text-cyan-500 bg-cyan-800 rounded-full px-8 py-2" @click="isOpen = false">Register</a>

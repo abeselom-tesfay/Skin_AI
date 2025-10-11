@@ -556,7 +556,7 @@
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <!-- Photo - Left Side -->
       <div class="flex flex-col items-center md:items-start">
-        <img src="@/assets/images/developer.jpg" alt="Abeselom Tesfay" class="w-64 h-64 rounded-lg object-cover shadow-lg mb-6" />
+        <img src="@/assets/images/developer.jpg" alt="Abeselom Tesfay" class="w-80 h-85 rounded-lg object-cover shadow-lg mb-6" />
         
         <!-- Developer Info -->
         <div class="text-center md:text-left">

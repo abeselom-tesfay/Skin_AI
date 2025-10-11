@@ -2,12 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // Import your pages
 import HomeView from '@/views/HomeView.vue'
-import AboutView from '@/views/AboutView.vue'
-import ContactView from '@/views/ContactView.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import FAQ from '../views/FAQ.vue'
 import Check from '../views/Check.vue'
+import Samples from '../components/Samples.vue'
 
 const routes = [
   {
@@ -29,21 +28,16 @@ const routes = [
     path: '/check',
     name: 'Check',
     component: Check
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: AboutView
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: ContactView
-  },  
+  }, 
   {
     path: '/faq',
     name: 'FAQ',
     component: FAQ
+  }, 
+  {
+    path: '/samples',
+    name: 'Samples',
+    component: Samples
   }
 ]
 
