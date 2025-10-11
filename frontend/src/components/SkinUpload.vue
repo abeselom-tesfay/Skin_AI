@@ -200,6 +200,69 @@
         </div>
       </div>
     </div>
+
+          <!-- Sample Gallery Section (For Demo When Backend is Down) -->
+      <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 mx-2 mt-6 text-center">
+        <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">Backend Not Working?</h3>
+        <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+          If the AI analysis isn't working (backend connection issue), you can still explore our comprehensive sample gallery with pre-analyzed results and medical explanations.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <router-link 
+            to="/samples" 
+            class="bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition flex items-center justify-center"
+          >
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+            </svg>
+            Explore Sample Gallery
+          </router-link>
+          
+          <button 
+            @click="showDemoMode = true"
+            class="border border-cyan-600 text-cyan-600 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-50 transition flex items-center justify-center"
+          >
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            View Demo Mode
+          </button>
+        </div>
+        
+        <p class="text-sm text-gray-500 mt-4">
+          The sample gallery works completely offline and shows how the AI analyzes different skin conditions.
+        </p>
+      </div>
+
+      <!-- Demo Mode Overlay -->
+      <div v-if="showDemoMode" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" @click="showDemoMode = false">
+        <div class="bg-white rounded-2xl p-8 max-w-md text-center" @click.stop>
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Demo Mode Information</h3>
+          <p class="text-gray-600 mb-6">
+            When deployed to Netlify, the frontend works perfectly but requires a separate backend server for live AI analysis.
+          </p>
+          <p class="text-gray-600 mb-6">
+            <strong>The sample gallery contains pre-analyzed examples</strong> showing exactly how the AI would classify each skin condition with medical guidance.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <router-link 
+              to="/samples" 
+              class="bg-cyan-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-cyan-700 transition"
+              @click="showDemoMode = false"
+            >
+              View Samples
+            </router-link>
+            <button 
+              @click="showDemoMode = false"
+              class="border border-gray-300 text-gray-700 px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -208,6 +271,7 @@ export default {
   name: 'SkinUpload',
   data() {
     return {
+      showDemoMode: false,
       selectedFile: null,
       imagePreview: null,
       result: null,
