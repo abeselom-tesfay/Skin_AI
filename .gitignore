@@ -1,16 +1,7 @@
 # Model files
 *.keras
-*.h5
 backend/models/
 # Ignore VSCode settings
 .vscode/
 node_modules/
-
-# Ignore frontend config files
-index.html
-package.json
-package-lock.json
-postcss.config.js
-tailwind.config.js
-vite.config.js
 
