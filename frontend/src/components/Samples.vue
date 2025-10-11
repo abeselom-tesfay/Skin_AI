@@ -12,7 +12,7 @@
 
       <!-- Human Skin Samples -->
       <div class="mb-16">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">🧬 Human Skin Lesion Samples</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">Human Skin Lesion Samples</h2>
         
         <!-- Sample Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -347,25 +347,25 @@ export default {
         {
           image: new URL('@/assets/samples/pet-1.jpg', import.meta.url).href,
           description: 'Dog Fur',
-          details: 'Animal coat patterns',
+          details: 'Canine animal fur with distinctive hair patterns and texture',
           type: 'animal'
         },
         {
-          image: new URL('@/assets/samples/pet-2.jpg', import.meta.url).href,
+          image: new URL('@/assets/samples/cats.jpg', import.meta.url).href,
           description: 'Cat Fur',
-          details: 'Feline coat patterns',
+          details: 'Feline coat with striped markings and soft hair texture',
           type: 'animal'
         },
         {
           image: new URL('@/assets/samples/object-1.jpg', import.meta.url).href,
-          description: 'Fabric Texture',
-          details: 'Clothing material',
+          description: 'Wooden Table Surface',
+          details: 'Natural wood grain patterns and furniture texture',
           type: 'object'
         },
         {
-          image: new URL('@/assets/samples/text-1.jpg', import.meta.url).href,
-          description: 'Printed Text',
-          details: 'Document with text',
+          image: new URL('@/assets/samples/object-2.jpg', import.meta.url).href,
+          description: 'Black Desktop Computer',
+          details: 'Electronic device with smooth plastic/metal surface',
           type: 'text'
         }
       ]
