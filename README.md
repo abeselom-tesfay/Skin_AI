@@ -9,7 +9,7 @@ A production-ready web application for automated skin lesion classification usin
 
 ## Live Demo
 
-- **Frontend**: [https://skin-ai-app.netlify.app](https://skin-ai-app.netlify.app)
+- **Frontend**: [https://skin-lesion-detection.netlify.app](https://skin-lesion-detection.netlify.app)
 - **Backend API**: Flask server with TensorFlow model
 
 ## Model Performance
