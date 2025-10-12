@@ -5,7 +5,7 @@
     </div>
     <div class="flex flex-col md:flex-row gap-10 mt-5 px-4 md:px-0">
       
-      <div class="md:w-1/2 grid md:grid-cols-2 gap-4">
+      <div class="lg:w-1/2 grid md:grid-cols-2 gap-4">
         <div class="flex items-center">
           <img src="@/assets/images/image-1.png" alt="Skin Sample 1" class="w-28 h-28 rounded-full object-cover"/>
           <div class="flex flex-col ml-4 items-start">
@@ -37,7 +37,7 @@
       </div>
 
       <!-- Right Div: Skin Image + Description -->
-      <div class="md:w-1/2 flex flex-col items-center max-md:hidden">
+      <div class="lg:w-1/2 flex flex-col items-center max-lg:hidden">
         <img src="@/assets/images/skin-pic.png" alt="Skin Sample" class="w-full h-full object-cover rounded-lg"/>
       </div>
 
