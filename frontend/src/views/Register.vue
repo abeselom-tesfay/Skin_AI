@@ -66,12 +66,9 @@
           >
             Register
           </button>
-          <button
-            type="button"
-            class="w-60 border border-cyan-700 text-cyan-700 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200"
-          >
-            I have an Account
-          </button>
+          <router-link to="/login" class="w-60 border border-cyan-700 text-cyan-700 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200 text-center">
+              I have an Account
+          </router-link>
         </div>
       </form>
     </div>
