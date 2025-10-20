@@ -46,12 +46,9 @@
         >
             Login
         </button>
-        <button
-            type="button"
-            class="w-60 border border-cyan-500 text-cyan-500 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200"
-        >
+        <router-link to="/register" class="w-60 border border-cyan-500 text-cyan-500 py-3 rounded-full hover:bg-cyan-700 hover:text-white transition duration-200 text-center">
             Register
-        </button>
+        </router-link>
         </div>
 
       </form>
