@@ -1,6 +1,6 @@
 <template>
   <section class="bg-cyan-700 px-4 md:px-20 pt-20 text-white" id="main">
-    <div class="items-start ">
+    <div class="items-start">
         <h2 class="text-2xl md:text-3xl font-bold mt-20">Check your skin!</h2>
     </div>
     <div class="flex flex-col md:flex-row gap-10 mt-5 px-4 md:px-0">
@@ -36,9 +36,9 @@
         </div>
       </div>
 
-      <!-- Right Div: Skin Image + Description -->
+      <!-- Right Div: Skin Image + Description - UPDATED SIZE -->
       <div class="lg:w-1/2 flex flex-col items-center max-lg:hidden">
-        <img src="@/assets/images/skin-pic.png" alt="Skin Sample" class="w-full h-full object-cover rounded-lg"/>
+        <img src="@/assets/images/skin-pic.png" alt="Skin Sample" class="w-96 h-80 object-cover rounded-lg shadow-lg"/>
       </div>
 
     </div>
