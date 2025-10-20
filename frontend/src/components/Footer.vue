@@ -8,7 +8,7 @@
           Always consult healthcare professionals for medical diagnosis and treatment.
         </p>
         <p class="text-white mt-5">
-          Skin AI | Developed by Abeselom Tesfay Gebremariam | Copyright © 2025
+          Developed by Abeselom Tesfay Gebremariam | Copyright © 2025
         </p>
       </div>
 

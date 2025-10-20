@@ -399,8 +399,8 @@
           v-for="(feature, index) in features"
           :key="index"
           class="w-3 h-3 rounded-full"
-          :class="index === currentIndex ? 'bg-cyan-600' : 'bg-gray-300'"
-          @click="currentIndex = index"
+          :class="index === currentFeatureIndex ? 'bg-cyan-600' : 'bg-gray-300'"
+          @click="currentFeatureIndex = index"
         ></button>
       </div>
     </div>
@@ -549,7 +549,7 @@
 </section>
 
 <!-- About Me Section -->
-<section class="px-4 md:px-20 py-16 bg-gray-50">
+<section class="px-4 md:px-20 py-16 bg-gray-50" id="contact">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">About the Developer</h2>
     
@@ -763,9 +763,10 @@ const slides = computed(() => {
   }
   return chunked;
 });
-const currentFeature = computed(() => features[currentIndex.value]);
+const currentFeature = computed(() => features[currentFeatureIndex.value]);
 const currentStep = computed(() => steps[currentIndex.value]);
 
 const currentIndex = ref(0);
+const currentFeatureIndex = ref(0);
 const carouselIndex = ref(0);
 </script>
